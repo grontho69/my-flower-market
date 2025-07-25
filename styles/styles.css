@@ -1,7 +1,7 @@
  *{
  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
  }
 .noto-serif{
   font-family: "Noto Serif", serif;
@@ -36,7 +36,7 @@ header nav {
 }
 .NAV li {
   list-style: none;
-  font-size: m;
+
 }
 .NAV a {
   text-decoration: none;
@@ -231,6 +231,7 @@ margin-bottom:16px ;
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: bold;
+  padding-top: 57px;
 }
 .discount-third {
   font-size: 40px;
@@ -240,7 +241,7 @@ margin-bottom:16px ;
 .shop-btn {
   display: inline-block;
   color: #fff;
-  background-color: #ff6f61;
+  background-color: #333;
   padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
@@ -281,7 +282,9 @@ padding-left: 20px;
     width: 186px;
     height: 50px;
     color: #fff;
-    border: none;text-align: center;
+    border: none;
+    text-align: center;
+   
 }
 .footer-container{
   display: flex;
@@ -306,6 +309,191 @@ margin-bottom: 32px;
  gap: 24px;
 }
 
+/* ========== iPhone 14 Pro (390px width) ========== */
+@media only screen and (max-width: 390px) {
+.hide{
+  display: none;
+}
+
+  .container {
+    padding: 0 12px;
+  }
+
+  /* Fresh Flower Section */
+ .fresh-flower {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 12px;
+
+}
+
+.fresh-left h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.fresh-left p {
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fresh-left span {
+  color: #E95A08;
+}
+
+.fresh-flower img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+  /* Plant Section */
+  .plant-section {
+    margin-top: 60px;
+  }
+
+  .plant-section h2 {
+    font-size: 36px;
+  }
+
+  .plant-card {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .plant-card .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .plant-card .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .plant-card .card .btn {
+    width: 100%;
+  }
+
+  /* Flower Lover Section */
+  .flower-lover {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+  }
+
+  .flower-lover .lover-left,
+  .flower-lover .lover-right {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .flower-lover .lover-mid {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .flower-lover .lover-mid img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .flower-lover .lover-right h2 {
+    font-size: 32px;
+  }
+
+  .flower-lover .lover-right ul {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .flower-lover .lover-right li {
+    font-size: 16px;
+  }
+
+  /* Latest Section */
+  .latest-section {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .latest-section h2 {
+    font-size: 32px;
+  }
+
+  .latest-section p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* Join Section */
+  .join-section {
+    height: auto;
+    background-size: cover;
+    padding: 40px 16px;
+  }
+
+  .news-letter-titel h2 {
+    font-size: 28px;
+    padding-top: 60px;
+  }
+
+  .join-section input[type="email"] {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .btnn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+
+  .off-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 12px;
+  }
+
+  .overlay,
+  .overlay-third {
+    width: 100%;
+    height: auto;
+    padding: 30px 16px;
+  }
+
+  .discount-third {
+    font-size: 28px;
+    padding-top: 40px;
+  }
+}
+
+
+
+
+
+
+  
 
 
 
