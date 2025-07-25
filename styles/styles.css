@@ -81,11 +81,11 @@ margin-top: 120px;
 }
 .plant-card .card{
 height: 484.94px;
-width: 270px;
+max-width: 270px;
 text-align: center;
 }
 .plant-card .card img{
-  width: 270px;
+ max-width:270px;
   height: 322.94px;
   margin-bottom: 30px;
 }
@@ -109,11 +109,11 @@ text-align: center;
 
 }
 .flower-lover .lover-left{
-  width: 540px;
+ width: 540px;
   height: 597px; 
 }
 .flower-lover .lover-right{
- width: 540px;
+width: 540px;
  height: 521px;
  
 }
@@ -135,7 +135,7 @@ padding-left: 15px;
  margin-bottom: 20px;
 }
 .flower-lover .lover-mid img{
-  width: 286px;
+  max-width: 286px;
   height: 286px;
 }
 .flower-lover .lover-mid {
@@ -216,7 +216,7 @@ margin-bottom:16px ;
   color: white;
   padding: 60px 48px;
   text-align: center;
- width: 369px;
+ width: 372px;
   height: 206px;
 }
 .overlay-third {
@@ -224,7 +224,7 @@ margin-bottom:16px ;
   color: white;
   padding: 60px 48px;
   text-align: center;
- width: 753px;
+ width: 755px;
   height: 423.13px;
 }
 .discount {
@@ -273,9 +273,9 @@ margin-bottom:16px ;
   padding-bottom: 20px;
 }
 .join-section input[type="email"]{
-  width: 644px;
+ width: 644px;
   height: 50px;
-padding-left: 20px;
+
 }
 .btnn{
    background-color: #E95A08;
@@ -310,7 +310,11 @@ margin-bottom: 32px;
 }
 
 /* ========== iPhone 14 Pro (390px width) ========== */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 450px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
 .hide{
   display: none;
 }
@@ -322,11 +326,11 @@ margin-bottom: 32px;
   /* Fresh Flower Section */
  .fresh-flower {
   flex-direction: column-reverse;
-  align-items: center;
+  align-items: center ;
   justify-content: center;
   height: auto;
   margin-top: 40px;
-  text-align: center;
+  text-align: left;
   padding: 0 12px;
 
 }
@@ -338,8 +342,8 @@ margin-bottom: 32px;
 }
 
 .fresh-left p {
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 14px;
+ 
   padding: 0 10px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -360,7 +364,10 @@ margin-bottom: 32px;
   }
 
   .plant-section h2 {
-    font-size: 36px;
+    font-size: 24px;
+  }
+  .plant-section p{
+    color: #8987A1;
   }
 
   .plant-card {
@@ -384,32 +391,36 @@ margin-bottom: 32px;
   }
 
   /* Flower Lover Section */
+
   .flower-lover {
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
-    gap: 20px;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 60px;
+    overflow-x: hidden;
+    position: relative;
   }
 
   .flower-lover .lover-left,
   .flower-lover .lover-right {
     width: 100%;
-    text-align: center;
+    max-width: 100%;
     height: auto;
+    padding: 16px;
+    box-sizing: border-box;
   }
 
   .flower-lover .lover-mid {
-    position: static;
-    margin: 20px auto;
+  
+    display: none;
+    
   }
 
-  .flower-lover .lover-mid img {
-    width: 200px;
-    height: 200px;
-  }
 
   .flower-lover .lover-right h2 {
     font-size: 32px;
+    text-align: left;
   }
 
   .flower-lover .lover-right ul {
@@ -419,7 +430,10 @@ margin-bottom: 32px;
 
   .flower-lover .lover-right li {
     font-size: 16px;
+    margin-bottom: 16px;
   }
+
+
 
   /* Latest Section */
   .latest-section {
@@ -486,7 +500,7 @@ margin-bottom: 32px;
     font-size: 28px;
     padding-top: 40px;
   }
-}
+
 
 
 
