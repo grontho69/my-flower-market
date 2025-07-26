@@ -1,7 +1,6 @@
  *{
  margin: 0;
   padding: 0;
-  
  }
 .noto-serif{
   font-family: "Noto Serif", serif;
@@ -16,7 +15,6 @@
   font-style: normal;
 }
 .container{
-
 max-width: 1140px;
 margin: auto;
 }
@@ -28,7 +26,6 @@ header nav {
 .logo{
   height: 82px;
   width: 135px;
-
 }
 .NAV {
   display: flex;
@@ -36,13 +33,11 @@ header nav {
 }
 .NAV li {
   list-style: none;
-
 }
 .NAV a {
   text-decoration: none;
   font-size: medium;
-  color:#8987A1;
-  
+  color:#8987A1; 
 }
 .fresh-flower{
 height: 461px;
@@ -99,6 +94,29 @@ text-align: center;
     height: 50px;
     color: #fff;
     border: none;
+     padding: 8px 16px;
+  
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.plant-card .card .btn:hover {
+  background-color: #fff;
+  color: #333;
+  border: #e65449 1px solid;
+}
+.shop-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.shop-btn:hover {
+  background-color: #e65449;
 }
 .flower-lover{
   display: flex;
@@ -106,7 +124,6 @@ text-align: center;
   justify-content: space-between;
   margin-top: 210px;
   position: relative;
-
 }
 .flower-lover .lover-left{
  width: 540px;
@@ -114,8 +131,7 @@ text-align: center;
 }
 .flower-lover .lover-right{
 width: 540px;
- height: 521px;
- 
+ height: 521px; 
 }
 .flower-lover .lover-right h2{
   font-size: 50px;
@@ -127,22 +143,29 @@ width: 540px;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
  list-style-position: inside;
- 
 }
 .flower-lover .lover-right li{
 padding-left: 15px;
  font-size: 22px;
  margin-bottom: 20px;
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .flower-lover .lover-mid img{
   max-width: 286px;
   height: 286px;
+  animation: spin 10s linear infinite;
 }
 .flower-lover .lover-mid {
   position: absolute;
   top: -20%;
   right: 45%;
- 
 }
 .latest-section {
   text-align: center;
@@ -262,8 +285,6 @@ margin-bottom:16px ;
   max-width: 830px;
   margin: 0 auto;
   text-align: center;
-
-
 }
 .news-letter-titel h2{
   font-size: 50px;
@@ -283,8 +304,7 @@ margin-bottom:16px ;
     height: 50px;
     color: #fff;
     border: none;
-    text-align: center;
-   
+    text-align: center;  
 }
 .footer-container{
   display: flex;
@@ -297,8 +317,7 @@ margin-bottom:16px ;
 .column a {
   text-decoration: none;
   font-size: medium;
-  color:#8987A1;
-  
+  color:#8987A1; 
 }
 .column li{
   list-style: none;
@@ -309,21 +328,13 @@ margin-bottom: 32px;
  gap: 24px;
 }
 
-/* ========== iPhone 14 Pro (390px width) ========== */
 @media only screen and (max-width: 600px) {
-  *{
-    margin: 0;
-    padding: 0;
-  }
 .hide{
   display: none;
 }
-
   .container {
     padding: 0 12px;
   }
-
-  /* Fresh Flower Section */
  .fresh-flower {
   flex-direction: column-reverse;
   align-items: center ;
@@ -332,67 +343,51 @@ margin-bottom: 32px;
   margin-top: 40px;
   text-align: left;
   padding: 0 12px;
-
 }
-
 .fresh-left h1 {
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 10px;
 }
-
 .fresh-left p {
   font-size: 14px;
- 
   padding: 0 10px;
   color: rgba(0, 0, 0, 0.6);
 }
-
 .fresh-left span {
   color: #E95A08;
 }
-
 .fresh-flower img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
-
-  /* Plant Section */
-  .plant-section {
+ .plant-section {
     margin-top: 60px;
   }
-
   .plant-section h2 {
     font-size: 24px;
   }
   .plant-section p{
     color: #8987A1;
   }
-
   .plant-card {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     padding: 0 5px;
   }
-
   .plant-card .card {
     width: 100%;
     height: auto;
   }
-
   .plant-card .card img {
     width: 100%;
     height: auto;
   }
-
   .plant-card .card .btn {
     width: 100%;
   }
-
-  /* Flower Lover Section */
-
-  .flower-lover {
+ .flower-lover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -401,7 +396,6 @@ margin-bottom: 32px;
     overflow-x: hidden;
     position: relative;
   }
-
   .flower-lover .lover-left,
   .flower-lover .lover-right {
     width: 100%;
@@ -410,92 +404,67 @@ margin-bottom: 32px;
     padding: 16px;
     box-sizing: border-box;
   }
-
   .flower-lover .lover-mid {
-  
     display: none;
-    
   }
-
-
   .flower-lover .lover-right h2 {
     font-size: 32px;
     text-align: left;
   }
-
   .flower-lover .lover-right ul {
     font-size: 16px;
-    padding-left: 0;
   }
-
   .flower-lover .lover-right li {
     font-size: 16px;
     margin-bottom: 16px;
   }
-
-
-
-  /* Latest Section */
-  .latest-section {
+.latest-section {
     margin-top: 80px;
     margin-bottom: 60px;
   }
-
   .latest-section h2 {
     font-size: 32px;
   }
-
   .latest-section p {
     font-size: 14px;
     padding: 0 10px;
   }
-
-  /* Join Section */
-  .join-section {
+ .join-section {
     height: auto;
     background-size: cover;
     padding: 40px 16px;
   }
-
   .news-letter-titel h2 {
     font-size: 28px;
     padding-top: 60px;
   }
-
   .join-section input[type="email"] {
     width: 100%;
     margin-bottom: 12px;
   }
-
   .btnn {
     width: 100%;
   }
-
-  /* Footer */
   .footer-container {
     flex-direction: column;
     padding: 30px 20px;
     gap: 40px;
     text-align: center;
   }
-
   .icon {
     justify-content: center;
   }
-
   .off-container {
     flex-direction: column;
     gap: 20px;
     padding: 0 12px;
   }
-
   .overlay,
   .overlay-third {
     width: 100%;
     height: auto;
     padding: 30px 16px;
   }
-
   .discount-third {
     font-size: 28px;
     padding-top: 40px;
